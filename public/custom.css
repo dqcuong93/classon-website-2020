@@ -1,0 +1,207 @@
+.dark .button.button-border:not(.button-light) {
+	border-color: #153d8a;
+	/* border-color: #FFFFFF; */
+	color: #FFFFFF;
+}
+
+.not-dark .button.button-border:not(.button-light):hover {
+	background-color: #034694;
+	color: #FFF;
+}
+
+.button.button-border {
+	background-color: #034694;
+	color: #FFF;
+}
+
+#primary-menu ul li>a {
+	color: #034694;
+	/* font-weight: 500; */
+}
+
+.btn-secondary {
+	background-color: #034694;
+	border-color: #034694;
+}
+
+.table th {
+	border-top: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.pricing--tashi .pricing--item {
+	margin: 0;
+	text-align: center;
+}
+
+.pricing {
+	margin: 0;
+}
+
+.pricing--tashi .pricing--title {
+	color: #FFFFFF;
+}
+
+.pricing--tashi .pricing--currency {
+	color: #FFFFFF;
+}
+
+.pricing--tashi .pricing--period {
+	color: #FFFFFF;
+}
+
+.pricing--tashi .pricing--price {
+	padding: 0.5em 0;
+}
+
+.table td {
+	padding: 0;
+	vertical-align: middle;
+}
+
+.table td>div {
+	padding: 0.5rem;
+	margin: 0 0.5rem;
+	color: #FFFFFF;
+}
+
+.starter {
+	background-color: #87BFFF !important;
+}
+
+.professional {
+	background-color: #034694 !important;
+}
+
+.business {
+	background-color: #FB3640 !important;
+}
+
+.sm-form-control {
+	/* border-bottom-color: #fff; */
+}
+
+.team-title span {
+	text-transform: none;
+}
+
+.pricing--norbu .pricing--item {
+	display: flex;
+	flex: 1;
+}
+
+.pricing--norbu .pricing--feature-list {
+	/* flex: 1; */
+	margin: 0 0.5em;
+	padding-top: 0;
+}
+
+/* .pricing--norbu .pricing--item>a {
+	padding: 2rem 0;
+} */
+
+.pricing--norbu .pricing--sentence {
+	height: 110px;
+}
+
+.pricing--norbu .pricing--icon {
+	content: "\e095";
+	font-family: 'lined-icons';
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 0.75em 0.188em 0;
+}
+
+.pricing--norbu .pricing--feature {
+	padding-top: 5px;
+    font-size: 0.9em;
+	/* line-height: 1.2; */
+}
+
+/* #top-search {
+	margin: 0;
+} */
+
+#primary-menu ul li a {
+	letter-spacing: 1.2px;
+}
+
+.sm-form-control {
+	color: #034694;
+	border-bottom-color: #034694;
+}
+
+.sm-form-control:focus {
+	border-color: #034694;
+}
+
+.sm-form-control::-moz-placeholder {
+	color: #000;
+}
+
+.sm-form-control:-ms-input-placeholder {
+	color: #000;
+}
+
+.sm-form-control::-webkit-input-placeholder {
+	color: #000;
+}
+
+.pricing--norbu .pricing--price {
+	font-size: 2.1em;
+}
+
+.pricing--norbu .pricing--period {
+	font-size: 0.5em;
+	display: inline-block;
+	padding-left: 0.5em;
+	padding-right: 0;
+}
+
+.pricing--norbu .pricing--title {
+	padding-top: 0.5em;
+	padding-bottom: 0;
+	font-size: 1.5em;
+}
+
+.pricing--norbu .pricing--feature::before {
+	padding-right: 0.5em;
+}
+
+.pricing--norbu .pricing--feature-header {
+	text-align: left;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    margin-top: 1.5em;
+    font-size: 1.15em;
+}
+
+.pricing--norbu .no--icon::before {
+	color: transparent;
+}
+
+.pricing--norbu .plus--icon::before {
+	content: '\2b';
+	vertical-align: inherit;
+	padding-left: 0.4em;
+	font-weight: bold;
+}
+
+.no--list {
+	list-style: none;
+}
+
+.feature-box p {
+	color: #555;
+}
+
+a {
+	color: #034694;
+}
+
+.heading-block > span {
+	font-size: 32px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body class="stretched">
+	<div id="wrapper" class="clearfix">
+
+        <header id="header" class="full-header static-sticky">
+            <%- include('../partials/header', { direct_nav: true}) %>
+        </header>
+
+		    <section id="content">
+          <div class="content-wrap">
+            <div class="container clearfix">
+              <h2 class="nobottommargin font-body t300 ls1" style="font-size: 40px;">Bảng giá</h2>
+              <h2 class="bottommargin-lg t300 ls1">Giải pháp giáo dục ClassOn.</h2>
+              <table class="table table-comparison nobottommargin">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>
+                        <div class="pricing pricing--tashi">
+                            <div class="pricing--item starter">
+                                <h3 class="pricing--title">Starter</h3>
+                                <!-- <p class="pricing--sentence">Perfect for small startups that have less than 10 team members</p> -->
+                                <div class="pricing--price"><span class="pricing--currency">$</span>19<span class="pricing--period">/ tháng</span></div>    
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="pricing pricing--tashi professional">
+                            <div class="pricing--item professional">
+                                <h3 class="pricing--title">Professional</h3>
+                                <!-- <p class="pricing--sentence">Suitable for medium-sized businesses with up to 30 employees</p> -->
+                                <div class="pricing--price"><span class="pricing--currency">$</span>199<span class="pricing--period">/ tháng</span></div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="pricing pricing--tashi">
+                            <div class="pricing--item business">
+                                <h3 class="pricing--title">Business</h3>
+                                <!-- <p class="pricing--sentence">For any large corporation with an unlimited number of members</p> -->
+                                <div class="pricing--price"><span class="pricing--currency">$</span>499<span class="pricing--period">/ tháng</span></div>
+                            </div>
+                        </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Space</td>
+                    <td><div class="starter">1 GB</div></td>
+                    <td><div class="professional">5 GB</div></td>
+                    <td><div class="business">20 GB</div></td>
+                  </tr>
+                  <tr>
+                    <td>Bandwidth</td>
+                    <td><div class="starter">10 GB</div></td>
+                    <td><div class="professional">100 GB</div></td>
+                    <td><div class="business">500 GB</div></td>
+                  </tr>
+                  <tr>
+                    <td>Email Accounts</td>
+                    <td><div class="starter">100</div></td>
+                    <td><div class="professional">1000</div></td>
+                    <td><div class="business">5000</div></td>
+                  </tr>
+                  <tr>
+                    <td>MySQL Accounts</td>
+                    <td><div class="starter">100</div></td>
+                    <td><div class="professional">1000</div></td>
+                    <td><div class="business">5000</div></td>
+                  </tr>
+                  <tr>
+                    <td>SSH Access</td>
+                    <td><div class="starter"><i class="icon-remove"></i></div></td>
+                    <td><div class="professional"><i class="icon-remove"></i></div></td>
+                    <td><div class="business"><i class="icon-ok"></i></div></td>
+                  </tr>
+                  <tr>
+                    <td>SMTP Management</td>
+                    <td><div class="starter"><i class="icon-remove"></i></div></td>
+                    <td><div class="professional"><i class="icon-remove"></i></div></td>
+                    <td><div class="business"><i class="icon-ok"></i></div></td>
+                  </tr>
+                  <tr>
+                    <td>FTP Access</td>
+                    <td><div class="starter"><i class="icon-remove"></i></div></td>
+                    <td><div class="professional"><i class="icon-ok"></i></div></td>
+                    <td><div class="business"><i class="icon-ok"></i></div></td>
+                  </tr>
+                  <tr>
+                    <td>Google Adwords Credit</td>
+                    <td><div class="starter"><i class="icon-remove"></i></div></td>
+                    <td><div class="professional"><i class="icon-ok"></i></div></td>
+                    <td><div class="business"><i class="icon-ok"></i></div></td>
+                  </tr>
+                  <tr>
+                    <td>Monthly Price</td>
+                    <td><div class="starter">Free</div></td>
+                    <td><div class="professional">$9.99</div></td>
+                    <td><div class="business">$19.99</div></td>
+                  </tr>
+                  <tr>
+                    <td>Quaterly Price</td>
+                    <td><div class="starter">Free</div></td>
+                    <td><div class="professional">$19.99</div></td>
+                    <td><div class="business">$49.99</div></td>
+                  </tr>
+                  <tr>
+                    <td>Yearly Price</td>
+                    <td><div class="starter">Free</div></td>
+                    <td><div class="professional">$69.99</div></td>
+                    <td><div class="business">$149.99</div></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td><a href="https://app.classon.edu.vn/register_from_website"><div class="button button-border button-circle t500 noleftmargin topmargin-sm1" style="margin-top: 15px;">Đăng ký gói Starter</div></a></td>
+                    <td><a href="https://app.classon.edu.vn/register_from_website"><div class="button button-border button-circle t500 noleftmargin topmargin-sm1" style="margin-top: 15px;">Đăng ký gói Professional</div></a></td>
+                    <td><a href="https://app.classon.edu.vn/register_from_website"><div class="button button-border button-circle t500 noleftmargin topmargin-sm1" style="margin-top: 15px;">Đăng ký gói Business</div></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+		    </section>
+
+        <%- include('../partials/footer') %>
+
+	</div>
+
+    <%- include('../partials/script') %>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<div id="header-wrap" style="background-color: #ADD7F6;">
+    <div class="container clearfix">
+        <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+        <div id="logo">
+            <a href="/" class="standard-logo" data-dark-logo="/static/images/classon-dark.png"><img src="/static/images/classon.png" alt="ClassOn Logo"></a>
+            <a href="/" class="retina-logo" data-dark-logo="/static/images/classon-dark@2x.png"><img src="/static/images/classon@2x.png" alt="ClassOn Logo"></a>
+        </div>
+        <!-- <div id="top-search" class="header-misc-icon">
+            <a href="#" id="top-search-trigger" style="margin: 26px 0;"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
+        </div> -->
+        <% if (!locals.no_login) { %>
+            <nav id="primary-menu">
+                <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+                    <% if (lang == 'en') { %>
+                        <!-- <li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
+                        <li><a href="#" data-href="#content"><div>Values</div></a></li>
+                        <li><a href="#" data-href="#section-pricing"><div>Pricing</div></a></li>
+                        <li><a href="#" data-href="#footer"><div>Support</div></a></li>
+                        <li><a href="#" data-href="#section-about-us"><div>About us</div></a></li>
+                        <li><a href="#" data-href="#footer"><div>Contact</div></a></li> -->
+                        <li><a href="<%= signin_url %>" class="norightpadding" style="padding-top: 10px; padding-bottom: 10px;"><div class="button button-border button-circle t500 noleftmargin topmargin-sm1">Log In</div></a></li>
+                        <!-- <li><a href="/lang/vn"><div><img src="/static/images/lang/vn.png" alt="Language" style="height: 12px;"><div style="display: inline-block; letter-spacing: 0; padding-left: 6px;">VN</div></div></a></li> -->
+                    <% } else { %>
+                        <!-- <li><a href="#" data-href="#wrapper"><div>Trang chủ</div></a></li>
+                        <li><a href="#" data-href="#content"><div>Giá trị mang lai</div></a></li>
+                        <li><a href="#" data-href="#section-pricing"><div>Bảng giá</div></a></li>
+                        <li><a href="#" data-href="#footer"><div>Hỗ trợ</div></a></li>
+                        <li><a href="#" data-href="#section-about-us"><div>Về chúng tôi</div></a></li>
+                        <li><a href="#" data-href="#footer"><div>Liên hệ</div></a></li> -->
+                        <li><a href="<%= signin_url %>" class="norightpadding" style="padding-top: 10px; padding-bottom: 10px;"><div class="button button-border button-circle t500 noleftmargin topmargin-sm1">Đăng Nhập</div></a></li>
+                        <!-- <li><a href="/lang/en"><div><img src="/static/images/lang/en.png" alt="Language" style="height: 12px;"><div style="display: inline-block; letter-spacing: 0; padding-left: 6px;">EN</div></div></a></li> -->
+                    <% } %>
+                </ul>
+            </nav>
+        <% } %>
+    </div>
+</div>

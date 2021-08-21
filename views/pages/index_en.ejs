@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body class="stretched">
+	<%- include('../partials/gtm') %>
+	<%- include('../partials/messenger') %>
+	<div id="wrapper" class="clearfix">
+
+		<header id="header" class="full-header border-full-header static-sticky">
+			<%- include('../partials/header') %>
+		</header>
+
+		<section id="slider" style="padding-top: 240px; padding-bottom: 30px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 norightpadding">
+						<h2 class="divcenter font-body t300 ls1" style="max-width: 700px; font-size: 40px; color: #034694;"><b>An EdTech solution</b><br>For everyone</h2>
+						<p class="lead divcenter bottommargin" style="text-align: justify;">Bringing the best technology solution for education, ClassOn helps online teaching and online learning becoming easier, more intuitive and more effective.</p>
+						<a href="#" data-scrollto="#section-pricing" data-offset="40" data-easing="easeInOutExpo" data-speed="1250" style="padding-top: 10px; padding-bottom: 10px;"><div class="button button-border button-circle t500 noleftmargin topmargin-sm1">Signup now, it's free</div></a>
+						<p><i>Applied to ClassOn Starter</i></p>
+					</div>
+					<div class="col-md-7 nopadding">
+						<img src="/static/images/landing.jpeg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="content">
+			<div class="content-wrap nopadding">
+				<div id="section-values" class="page-section notoppadding nobottompadding" style="margin-top: 180px; background-color: #034694;">
+					<div class="section nobottompadding nobottommargin" style="overflow: visible; background-color: #034694;">
+						<div class="container clearfix" style="margin-top: -200px; background-color: #ADD7F6; border-radius: 15px;">
+							<div class="divcenter center" style="padding: 30px 0;">
+								<h2 class="divcenter font-body t300 ls1" style="font-size: 40px; color: #034694;">Knowledge fulfilled anywhere, anytime.</h2>
+								<h2 class="nobottommargin t300 ls1">ClassOn is the fastest and simplest way to bring knowledge everywhere, by creating an education platform for those who want to learn and share their knowledge without worrying about their ‘low-tech’ skills​.</h2>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row align-items-stretch topmargin-lg clearfix">
+							<div class="col-lg-4 col-md-6" style="background-color: #034694;">
+								<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-et-gears" style="color: #FFFFFF;"></i></a>
+									</div>
+									<h3 style="color: #FFFFFF; font-size: 1.25rem; font-weight: 400; height: 70px;">Personalized and interactive</h3>
+									<p class="lead" style="color: #FFFFFF; font-size: 1rem;">ClassOn provides many simple and powerful tools that helps our customers optimise their education technology experiences.</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6" style="background-color: #034694;">
+								<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-et-genius" style="color: #FFFFFF;"></i></a>
+									</div>
+									<h3 style="color: #FFFFFF; font-size: 1.25rem; font-weight: 400; height: 70px;">Professional education system EdTech solutions</h3>
+									<p class="lead" style="color: #FFFFFF; font-size: 1rem;">We leverage your study and your education system by building a professional education system through ClassOn platform. These education models: Flipped Classroom, E-learning and Virtual Classroom are implemented.</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6" style="background-color: #034694;">
+								<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-et-hotairballoon" style="color: #FFFFFF;"></i></a>
+									</div>
+									<h3 style="color: #FFFFFF; font-size: 1.25rem; font-weight: 400; height: 70px;">Global citizen - Global environment</h3>
+									<p class="lead" style="color: #FFFFFF; font-size: 1rem;">There will be no gap between lecturers and attendees. Teachers and students meet each other in a “physical-like” study room despite their distances.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section id="section-pricing" class="section pricing-section nomargin dark nobottompadding" style="background: linear-gradient(0, #87BFFF, #034694);">
+					<div class="container clearfix">
+						<h2 class="bottommargin bottompadding font-body t300 ls1" style="font-size: 40px; color: #fff;">Pricing</h2>
+						<div class="pricing pricing--norbu">
+							<div class="pricing--item">
+								<h3 class="pricing--title">Starter</h3>
+								<div class="pricing--price"><span class="pricing--currency">đ</span>0<span class="pricing--period">/ month</span></div>
+								<a href="<%= registration_url %>/starter"><div class="button button-border button-circle t500" style="margin-top: 15px;">Sign Up</div></a>
+								<p class="pricing--feature-header">Course management:</p>
+								<ul class="pricing--feature-list nobottompadding">
+									<li class="pricing--feature">1 teacher</li>
+									<li class="pricing--feature">3 courses</li>
+									<li class="pricing--feature">500 MB storage</li>
+									<li class="pricing--feature">No teaching assistants</li>
+									<li class="pricing--feature">No observers</li>
+								</ul>
+								<p class="pricing--feature-header">Online Classroom:</p>
+								<ul class="pricing--feature-list nobottompadding">
+									<li class="pricing--feature">1 conference</li>
+									<li class="pricing--feature">Maximum 30 students in a conference</li>
+									<li class="pricing--feature">Maximum 2 hours usage for a conference</li>
+									<li class="pricing--feature">No conference record</li>
+								</ul>
+								<a href="<%= registration_url %>/starter"><div class="button button-border button-circle t500" style="margin: 15px 0;">Sign Up</div></a>
+							</div>
+							<div class="pricing--item">
+								<h3 class="pricing--title">Advanced</h3>
+								<div class="pricing--price"><span class="pricing--currency">đ</span>500.000<span class="pricing--period">/ month</span></div>
+								<a href="<%= registration_url %>/advanced"><div class="button button-border button-circle t500" style="margin-top: 15px;">Sign Up</div></a>
+								<p class="pricing--feature-header">Course management:</p>
+								<ul class="pricing--feature-list nobottompadding">
+									<li class="pricing--feature">1 teacher</li>
+									<li class="pricing--feature">10 courses</li>
+									<li class="pricing--feature">2 GB storage</li>
+									<li class="pricing--feature">No teaching assistants</li>
+									<li class="pricing--feature">No observers</li>
+								</ul>
+								<p class="pricing--feature-header">Online Classroom:</p>
+								<ul class="pricing--feature-list nobottompadding">
+									<li class="pricing--feature">1 conference</li>
+									<li class="pricing--feature">Maximum 50 students in a conference</li>
+									<li class="pricing--feature">Maximum 4 hours usage for a conference</li>
+									<li class="pricing--feature">Conference record</li>
+								</ul>
+								<a href="<%= registration_url %>/advanced"><div class="button button-border button-circle t500" style="margin: 15px 0;">Sign Up</div></a>
+							</div>
+							<div class="pricing--item pricing--item--featured">
+								<h3 class="pricing--title">Pro</h3>
+								<div class="pricing--price"><span class="pricing--currency">đ</span>1.000.000<span class="pricing--period">/ month</span></div>
+								<a href="<%= registration_url %>/pro"><div class="button button-border button-circle t500" style="margin-top: 15px;">Sign Up</div></a>
+								<p class="pricing--feature-header">Course management:</p>
+								<ul class="pricing--feature-list nobottompadding">
+									<li class="pricing--feature">3 teachers</li>
+									<li class="pricing--feature">30 courses</li>
+									<li class="pricing--feature">10 GB storage</li>
+									<li class="pricing--feature">3 teaching assistants</li>
+									<li class="pricing--feature">3 observers</li>
+								</ul>
+								<p class="pricing--feature-header">Online Classroom:</p>
+								<ul class="pricing--feature-list nobottompadding">
+									<li class="pricing--feature">3 conferences</li>
+									<li class="pricing--feature">Maximum 50 students in a conference</li>
+									<li class="pricing--feature">Maximum 8 hours usage for a conference</li>
+									<li class="pricing--feature">Conference record</li>
+								</ul>
+								<a href="<%= registration_url %>/pro"><div class="button button-border button-circle t500" style="margin: 15px 0;">Sign Up</div></a>
+							</div>
+							<div class="pricing--item">
+								<h3 class="pricing--title">Scale</h3>
+								<div class="pricing--price"><span class="pricing--currency">đ</span>3.000.000<span class="pricing--period">/ month</span></div>
+								<a href="<%= registration_url %>/scale"><div class="button button-border button-circle t500" style="margin-top: 15px;">Sign Up</div></a>
+								<p class="pricing--feature-header">Course management:</p>
+								<ul class="pricing--feature-list nobottompadding">
+									<li class="pricing--feature">10 teachers</li>
+									<li class="pricing--feature">Unlimited courses</li>
+									<li class="pricing--feature">50 GB storage</li>
+									<li class="pricing--feature">10 teaching assistants</li>
+									<li class="pricing--feature">10 observers</li>
+								</ul>
+								<p class="pricing--feature-header">Online Classroom:</p>
+								<ul class="pricing--feature-list nobottompadding">
+									<li class="pricing--feature">10 conferences</li>
+									<li class="pricing--feature">Maximum 50 students in a conference</li>
+									<li class="pricing--feature">Maximum 24 hours usage for a conference</li>
+									<li class="pricing--feature">Conference record</li>
+								</ul>
+								<a href="<%= registration_url %>/scale"><div class="button button-border button-circle t500" style="margin: 15px 0;">Sign Up</div></a>
+							</div>
+						</div>
+						<ul style="padding: 0 30px; font-style: italic;">
+							<li>The Starter is applied for teaching and learning. We reserve the right to refuse services if you use ClassOn for other purposes.</li>
+							<li>Number of classes valid at a time(*): Is the number of classes that are in published mode for students to join. When a class is finished, you can hide it so that it doesn't affect the number of available classes.</li>
+							<li>Recorded conferences(*): Recorded file size will be included in online document storage capacity. You can download and then delete old files so that they do not take up online space.</li>
+							<li>The maximum usage for conferences(*): When time runs out, you can re-create a new conference to continue teaching, or create multiple conferences and activate them when needed.</li>
+							<li>Buy 3 months off 10%, 12 months off 20%.</li>
+							<li>When signup, you can try the Scale for free within 2 months, no prepayment is required, no credit card required.</li>
+							<li>
+								In order to bring knowledge to the countryside and support non-governmental organizations, we offer a 50% discount on:
+								<ul style="padding: 0 15px; font-style: italic;">
+									<li>Members reside in priority area 1 (KV1) and rural area 2 (KV2-NT) according to the regulations of the Ministry of Education.</li>
+									<li>Non-profit organizations.</li>
+								</ul>
+							</li>
+						</ul>
+						<p class="lead" style="color: #FFFFFF; font-size: 1.5rem;">Features:</p>
+						<div class="row clearfix">
+							<div class="col-lg-6 col-md-6">
+								<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+									<h3 style="color: #FFFFFF; font-size: 1rem; font-weight: 400;">Course management</h3>
+									<ul class="center nobottompadding">
+										<li class="no--list">Test management</li>
+										<li class="no--list">Questionair bank</li>
+										<li class="no--list">Quizz management</li>
+										<li class="no--list">Material storage system</li>
+										<li class="no--list">Unlimited student managent</li>
+										<li class="no--list">Course forum for discussion</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+									<h3 style="color: #FFFFFF; font-size: 1rem; font-weight: 400;">Online Classroom</h3>
+									<ul class="center nobottompadding">
+										<li class="no--list">Quick quizz</li>
+										<li class="no--list">Screen sharing</li>
+										<li class="no--list">Interactive dashboard</li>
+										<li class="no--list">Realtime interfacton</li>
+										<li class="no--list">Public & private discussion</li>
+										<li class="no--list">Collaboration notes</li>
+										<!-- <li class="pricing--feature">Caption</li>
+										<li class="pricing--feature">Webcam</li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section nomargin" style="background-color: #ADD7F6;">
+						<div class="divcenter center" style="max-width: 900px;">
+							<h2 class="nobottommargin t300 ls1" style="color: #034694">Need a solution for your enterprise? <a href="#" data-scrollto="#footer" data-offset="140" data-easing="easeInOutExpo" data-speed="1250" class="button button-border button-circle t500 notopmargin nobottommargin" style="position: relative; top: -3px;">Contact us</a></h2>
+						</div>
+					</div>
+				</section>
+
+				<div id="section-about-us" class="center page-section nobottompadding">
+					<div class="container clearfix">
+						<h2 class="divcenter bottommargin font-body t300 ls1" style="font-size: 40px; color: #034694;">About Us</h2>
+						<p class="lead divcenter bottommargin" style="text-align: justify;">ClassOn (CLO) established in 2019 with expectation of becoming the leading EdTech Solutions in the ASEAN. ClassOn is one of the first online educational platform in Vietnam that applying many modern EdTech technologies from over the World. Hence, ClassOn brings modern, professional and effective facilities, tools and platform for digital education in Vietnam and the ASEAN.</p>
+						<p class="lead divcenter bottommargin" style="text-align: justify;"><b>ClassOn believes</b><br>Education must be for every single person who has demand. However, applying the digital education to reality and the proper ways to approach this field still remains one of the world's biggest problems, both in the developing and developed countries. After all, our platform is expected could help brings education becoming more accessible, anywhere, anytime, especially where the teacher sources are limited.</p>
+						<p class="lead divcenter bottommargin" style="text-align: justify;"><b>ClassOn trusts</b><br>The best way for teaching is to be student-centred. We believe our platform is not only can reach more students than the others, but also can change the way we teach and learn. Moreover, we give out the powerful tools and good facilities for teachers to teach more and more effective, and by that students can learn more active, and more effective also. Following Blended Learning model, ClassOn would makes a perfect combination between the direct learning and online teaching.</p>
+						<p class="lead divcenter bottommargin" style="text-align: justify;"><b>ClassOn wants</b><br>Those online classrooms need to be highly interactive, and being collaborative with others, so we have built many powerful tools to leverage this. Students are considered learn best when they keep connect and interact with teachers and the other learners. Understand this, we have made it possible for teachers to draw, import and upload multiple files to a virtual whiteboard, and students can interact with documents on the same screen, in a meantime and also be able to connect with each other via video and microphone, etc.</p>
+						<p class="lead divcenter bottommargin" style="text-align: justify;"><b>ClassOn engagement</b><br>We will provide modern EdTech Solutions for customers those want to teach, to learn and to share knowledge globally without considering to have the "massive" skills using technologies. To conclude, The ClassOn education platform aims to connect the modern education technologies to the future "global" citizens.</p>
+					</div>
+				</div>
+
+				<!-- <div class="row col-padding notoppadding clearfix">
+					<div class="col-lg-3 col-md-6">
+						<div class="team">
+							<div class="team-image">
+								<img src="/static/images/team/duc-trinh.png" alt="TRỊNH ANH ĐỨC">
+							</div>
+							<div class="team-desc">
+								<div class="team-title">
+									<h4>TRỊNH ANH ĐỨC</h4>
+									<span><i>Đồng sáng lập</i></span>
+									<span><i>Giám đốc điều hành</i></span>
+									<p class="lead topmargin-sm" style="font-size: 1rem; text-align: justify; margin-bottom: 10px;">Đồng sáng lập của DataPower.</p>
+									<p class="lead" style="font-size: 1rem; text-align: justify;">Là người có kiến thức sâu rộng trong các lĩnh vực giáo dục, công nghệ và quan hệ doanh nghiệp, Đức đã định hình các sản phẩm của ClassOn với mong muốn được cống hiến xây dựng một nền tảng hiện đại cho nền giáo dục của Việt Nam.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="team">
+							<div class="team-image">
+								<img src="/static/images/team/hung-le.png" alt="LÊ MINH HÙNG">
+							</div>
+							<div class="team-desc">
+								<div class="team-title">
+									<h4>LÊ MINH HÙNG</h4>
+									<span><i>Đồng sáng lập</i></span>
+									<span><i>Giám đốc chiến lược</i></span>
+									<p class="lead topmargin-sm" style="font-size: 1rem; text-align: justify;">Có hơn 15 năm kinh nghiệm về phát triển và vận hành các sản phẩm SaaS (Software As A Service) đạt GMV hàng trăm triệu USD/sản phẩm của các tập đoàn đa quốc gia của Mỹ, Thụy Sỹ, và Việt Nam. Hùng giúp hoạch định và thực thi các chiến lượt để ClassOn là một tổ chức liên tục sáng tạo, cải tiến, và phát triển bền vững về vận hành và kinh doanh.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="team">
+							<div class="team-image">
+								<img src="/static/images/team/cuong-dao.png" alt="ĐÀO QUỐC CƯỜNG">
+							</div>
+							<div class="team-desc">
+								<div class="team-title">
+									<h4>ĐÀO QUỐC CƯỜNG</h4>
+									<span><i>Đồng sáng lập</i></span>
+									<span><i>Giám đốc vận hành</i></span>
+									<p class="lead topmargin-sm" style="font-size: 1rem; text-align: justify; margin-bottom: 10px;">4 năm hoạt động trong lĩnh vực quản lý và vận hành chuỗi sản phẩm phần mềm cho công ty PTSC, trực thuộc Tập đoàn Dầu khí Quốc gia Việt Nam.</p>
+									<p class="lead" style="font-size: 1rem; text-align: justify; margin-bottom: 10px;">Tốt nghiệp top 5%, Dean’s merit list tại trường Western Sydney, Úc.</p>
+									<p class="lead" style="font-size: 1rem; text-align: justify;">Là Giám đốc mảng hoạt động doanh nghiệp, Cường có trách nhiệm quản lý và vận hành công việc hàng ngày của ClassOn. Với mong muốn áp dụng kiến thức và công nghệ cao vào việc vận hành cũng như quản trị, ClassOn sẽ được xây dựng một môi trường doanh nghiệp năng động, trẻ trung, sáng tạo và sẽ được vận hành một cách hiệu quả nhất.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="team">
+							<div class="team-image">
+								<img src="/static/images/team/viet-nguyen.png" alt="NGUYỄN ĐỨC VIỆT">
+							</div>
+							<div class="team-desc">
+								<div class="team-title">
+									<h4>NGUYỄN ĐỨC VIỆT</h4>
+									<span><i>Đồng sáng lập</i></span>
+									<span><i>Giám đốc công nghệ</i></span>
+									<p class="lead topmargin-sm" style="font-size: 1rem; text-align: justify; margin-bottom: 10px;">Nhà sáng lập và CEO của GoodyChat, công ty chuyên cung cấp những hệ thống phần mềm doanh nghiệp, trong đó có hệ thống quan trắc cho tuyến Metro Bến Thành và ứng dụng sách nói.</p>
+									<p class="lead" style="font-size: 1rem; text-align: justify;">Là Giám đốc mảng công nghệ, Việt luôn hướng tới phát triển hệ thống công nghệ của ClassOn từ những kỹ thuật cơ bản nhất, đảm bảo hê thống luôn có khả năng mở rộng, linh hoạt và đơn giản sử dụng. Việt luôn mong muốn xây dựng một nền tảng công nghệ vững chắc cho ClassOn, có khả năng thích nghi cao với sự thay đổi nhanh chóng và mạnh mẽ về công nghệ của tương lai.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</section>
+
+        <%- include('../partials/footer') %>
+
+	</div>
+
+    <%- include('../partials/script') %>
+
+</body>
+</html>

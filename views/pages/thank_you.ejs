@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body class="stretched">
+	<div id="wrapper" class="clearfix">
+
+        <header id="header" class="static-sticky">
+            <%- include('../partials/simple_header', { no_login: true }) %>
+        </header>
+
+        <section id="content">
+          <div class="content-wrap">
+            <div class="container clearfix">
+              <% if (lang == 'en') { %>
+                <div class="heading-block center nobottomborder">
+                  <span style="color: #034694;">Successfully registered your account.</span>
+                  <a href="<%= signin_url %>" class="norightpadding" style="padding-top: 10px; padding-bottom: 10px;"><div class="button button-border button-circle t500 noleftmargin topmargin-sm1">Start Logging In</div></a>
+                </div>
+                <div class="col_one_third topmargin">
+                  <div class="feature-box fbox-center fbox-light fbox-plain">
+                    <div class="fbox-icon">
+                      <a href="#"><i class="icon-support" style="color: #034694;"></i></a>
+                    </div>
+                    <h3 class="font-body t300 ls1">Get Started?</h3>
+                    <p style="font-size: 1.0rem;">You may want to check our <a href="https://app.classon.edu.vn/courses/14">User Guide</a> to know how to setup your first course.</p>
+                  </div>
+                </div>
+                <div class="col_one_third topmargin">
+                  <div class="feature-box fbox-center fbox-light fbox-plain">
+                    <div class="fbox-icon">
+                      <a href="#"><i class="icon-email3" style="color: #034694;"></i></a>
+                    </div>
+                    <h3 class="font-body t300 ls1">Need Support?</h3>
+                    <p style="font-size: 1.0rem;">You may simply send us an Email at <a href="mailto:info@classon.edu.vn">info@classon.edu.vn</a> if you need any support.</p>
+                  </div>
+                </div>
+                <div class="col_one_third topmargin col_last">
+                  <div class="feature-box fbox-center fbox-light fbox-plain">
+                    <div class="fbox-icon">
+                      <a href="#"><i class="icon-forumbee" style="color: #034694;"></i></a>
+                    </div>
+                    <h3 class="font-body t300 ls1">Hands-on Community?</h3>
+                    <p style="font-size: 1.0rem;">Hanging around with others for greatful help and valuable information.</p>
+                  </div>
+                </div>
+              <% } else { %>
+                <div class="heading-block center nobottomborder">
+                  <span style="color: #034694;">Đã đăng ký tài khoản thành công.</span>
+                  <a href="<%= signin_url %>" class="norightpadding" style="padding-top: 10px; padding-bottom: 10px;"><div class="button button-border button-circle t500 noleftmargin topmargin-sm1">Bắt đầu sử dụng</div></a>
+                </div>
+                <div class="col_one_third topmargin">
+                  <div class="feature-box fbox-center fbox-light fbox-plain">
+                    <div class="fbox-icon">
+                      <a href="#"><i class="icon-support" style="color: #034694;"></i></a>
+                    </div>
+                    <h3 class="font-body t300 ls1">Bắt đầu?</h3>
+                    <p style="font-size: 1.0rem;">Bạn có thể muốn xem <a href="https://app.classon.edu.vn/courses/14">Hướng Dẫn Sử Dụng</a> để biết cách thiết lập khóa học đầu tiên.</p>
+                  </div>
+                </div>
+                <div class="col_one_third topmargin">
+                  <div class="feature-box fbox-center fbox-light fbox-plain">
+                    <div class="fbox-icon">
+                      <a href="#"><i class="icon-email3" style="color: #034694;"></i></a>
+                    </div>
+                    <h3 class="font-body t300 ls1">Cần hỗ trợ?</h3>
+                    <p style="font-size: 1.0rem;">Bạn có thể gửi Email cho chúng tôi tại <a href="mailto:info@classon.edu.vn">info@classon.edu.vn</a> nếu cần bất kỳ hỗ trợ nào.</p>
+                  </div>
+                </div>
+                <div class="col_one_third topmargin col_last">
+                  <div class="feature-box fbox-center fbox-light fbox-plain">
+                    <div class="fbox-icon">
+                      <a href="#"><i class="icon-forumbee" style="color: #034694;"></i></a>
+                    </div>
+                    <h3 class="font-body t300 ls1">Cộng đồng chung tay?</h3>
+                    <p style="font-size: 1.0rem;">Gặp gỡ những người khác để được trợ giúp hữu ích và các thông tin có giá trị.</p>
+                  </div>
+                </div>
+              <% } %>
+            </div>
+          </div>
+        </section>
+
+        <%- include('../partials/footer') %>
+
+	</div>
+
+    <%- include('../partials/script') %>
+
+</body>
+</html>

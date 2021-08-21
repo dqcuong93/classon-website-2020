@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body class="stretched">
+	<div id="wrapper" class="clearfix">
+
+        <header id="header" class="static-sticky">
+            <%- include('../partials/simple_header') %>
+        </header>
+
+		    <section id="content">
+          <div class="content-wrap">
+              <div class="container clearfix">    
+                <div class="col_half topmargin-sm" style="padding: 0 30px;">
+                  <img src="/static/images/login_with.png" alt="">
+                </div>
+                <div class="col_half col_last">
+                  <% if (lang == 'en') { %>
+                    <h2 class="nobottommargin font-body t300 ls1" style="font-size: 40px;">Registration: <b><%= packageName %></b></h2>
+                    <p class="lead bottommargin">Quick &amp; easy.</p>
+                    <div class="form-widget" data-alert-type="inline" data-loader="button" data-redirect="/thank_you">
+                      <div class="form-result"></div>
+                      <form id="register-form" name="register-form" class="nobottommargin" action="/register" method="post">
+                        <div class="form-process"></div>
+                        <div class="col_half">
+                          <label for="lastname" class="capitalize t600">Last Name:</label>
+                          <input type="text" name="lastname" value="" class="form-control required" />
+                        </div>
+                        <div class="col_half col_last">
+                          <label for="firstname" class="capitalize t600">First Name:</label>
+                          <input type="text" name="firstname" value="" class="form-control required" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col_half">
+                          <label for="email" class="capitalize t600">Email:</label>
+                          <input type="email" name="email" value="" class="form-control required" />
+                        </div>
+                        <div class="col_half col_last">
+                          <label for="password" class="capitalize t600">Password:</label>
+                          <input type="password" name="password" value="" class="form-control required" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col_full">
+                          <label for="phone" class="capitalize t600">Phone Number:</label>
+                          <input type="text" name="phone" value="" class="form-control required" />
+                        </div>
+                        <!-- <div class="col_half col_last">
+                          <label for="repassword" class="capitalize t600">Password (retyped):</label>
+                          <input type="password" id="repassword" name="repassword" value="" class="form-control required" />
+                        </div> -->
+                        <div class="clear"></div>
+                        <div class="col_full nobottommargin">
+                          <button type="submit" class="t400 capitalize button button-border button-circle nomargin" value="submit">REGISTER NOW</button>
+                          <small style="display: block; font-size: 13px; margin-top: 15px; color: red;">
+                            <i>- The password must be at least 8 characters.</i><br>
+                            <i>- Please provide all of the above information.</i>
+                          </small>
+                        </div>
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                        <input type="hidden" name="package" value="<%= package %>">
+                      </form>
+                    </div>
+                  <% } else { %>
+                    <h2 class="nobottommargin font-body t300 ls1" style="font-size: 40px;">Đăng Ký: <b><%= packageName %></b></h2>
+                    <p class="lead bottommargin">Đơn giản &amp; dễ dàng.</p>
+                    <div class="form-widget" data-alert-type="inline" data-loader="button" data-redirect="/thank_you">
+                      <div class="form-result"></div>
+                      <form id="register-form" name="register-form" class="nobottommargin" action="/register" method="post">
+                        <div class="form-process"></div>
+                        <div class="col_half">
+                          <label for="lastname" class="capitalize t600">Họ:</label>
+                          <input type="text" name="lastname" value="" class="form-control required" />
+                        </div>
+                        <div class="col_half col_last">
+                          <label for="firstname" class="capitalize t600">Tên:</label>
+                          <input type="text" name="firstname" value="" class="form-control required" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col_half">
+                          <label for="email" class="capitalize t600">Email:</label>
+                          <input type="email" name="email" value="" class="form-control required" />
+                        </div>
+                        <div class="col_half col_last">
+                          <label for="password" class="capitalize t600">Mật khẩu:</label>
+                          <input type="password" name="password" value="" class="form-control required" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col_full">
+                          <label for="phone" class="capitalize t600">Số điện thoại:</label>
+                          <input type="text" name="phone" value="" class="form-control required" />
+                        </div>
+                        <!-- <div class="col_half col_last">
+                          <label for="repassword" class="capitalize t600">Mật khẩu (nhập lại):</label>
+                          <input type="password" id="repassword" name="repassword" value="" class="form-control required" />
+                        </div> -->
+                        <div class="clear"></div>
+                        <div class="col_full nobottommargin">
+                          <button type="submit" class="t400 capitalize button button-border button-circle nomargin" value="submit">ĐĂNG KÝ NGAY</button>
+                          <small style="display: block; font-size: 13px; margin-top: 15px; color: red;">
+                            <i>- Mật khẩu phải có ít nhất 8 kí tự trở lên.</i><br>
+                            <i>- Vui lòng cung cấp tất cả thông tin ở trên.</i>
+                          </small>
+                        </div>
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                        <input type="hidden" name="package" value="<%= package %>">
+                      </form>
+                    </div>
+                  <% } %>
+                </div>
+              </div>
+          </div>
+		    </section>
+
+        <%- include('../partials/footer') %>
+
+	</div>
+
+    <%- include('../partials/script') %>
+
+</body>
+</html>

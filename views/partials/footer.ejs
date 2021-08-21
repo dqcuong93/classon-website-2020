@@ -1,0 +1,146 @@
+<footer id="footer" class="noborder" style="background-color: #ADD7F6;">
+    <div class="container">
+        <div class="footer-widgets-wrap nobottompadding">
+            <h4 style="padding-top: 30px; text-transform: uppercase; letter-spacing: 3px; font-weight: 300; font-size: 20px; margin-bottom: 20px; color: #000;">
+                <% if (lang == 'en') { %>
+                    CONTACT
+                <% } else { %>
+                    LIÊN HỆ
+                <% } %>
+            </h4>
+            <div class="row clearfix">
+                <div class="col-lg-4">
+                    <div class="widget notoppadding clearfix">
+                        <% if (lang == 'en') { %>
+                            <p class="lead nobottommargin" style="color: #000;">Head Office</p>
+                            <p style="color: #034694">72 Nguyen Thai Binh, Dist. 1, Ho Chi Minh</p>
+                            <p class="lead nobottommargin" style="color: #000;">Phone</p>
+                            <p><a href="tel:+842899988881" style="color: #034694">(84) 028 999 88881</a></p>
+                            <p class="lead nobottommargin" style="color: #000;">Email</p>
+                            <p><a href="mailto:info@classon.edu.vn" style="color: #034694">info@classon.edu.vn</a></p>
+                            <p class="lead nobottommargin" style="color: #000;">Connect with us</p>
+                        <% } else { %>
+                            <p class="lead nobottommargin" style="color: #000;">Trụ sở chính</p>
+                            <p style="color: #034694">72 Nguyễn Thái Bình, Q1, Hồ Chí Minh</p>
+                            <p class="lead nobottommargin" style="color: #000;">Điện thoại</p>
+                            <p><a href="tel:+842899988881" style="color: #034694">(84) 028 999 88881</a></p>
+                            <p class="lead nobottommargin" style="color: #000;">Email</p>
+                            <p><a href="mailto:info@classon.edu.vn" style="color: #034694">info@classon.edu.vn</a></p>
+                            <p class="lead nobottommargin" style="color: #000;">Kết nối với ClassOn</p>
+                        <% } %>
+
+                        <div>
+                            <a href="https://www.facebook.com/classon.edu.vn" class="social-icon inline-block noborder si-large si-facebook" title="Facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/classon" class="social-icon inline-block noborder si-large si-linkedin" title="Twitter">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon inline-block noborder si-large si-youtube" title="Github">
+                                <i class="icon-youtube"></i>
+                                <i class="icon-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="container clearfix">
+                        <div class="divcenter" style="max-width: 850px;">
+                            <div class="form-widget" data-alert-type="inline" data-loader="button">
+                                <div class="form-result"></div>
+                                <form class="nobottommargin" id="template-contactform" name="template-contactform"
+                                    action="/contact" method="post">
+                                    <div class="form-process"></div>
+                                    <% if (lang == 'en') { %>
+                                        <div class="col_one_third">
+                                            <input type="text" id="name" name="name" value=""
+                                                class="sm-form-control border-form-control required" placeholder="Your name" />
+                                        </div>
+                                        <div class="col_one_third">
+                                            <input type="text" id="phone" name="phone" value=""
+                                                class="sm-form-control border-form-control" placeholder="Phone number" />
+                                        </div>
+                                        <div class="col_one_third col_last">
+                                            <input type="email" id="email" name="email" value=""
+                                                class="required email sm-form-control border-form-control" placeholder="Email" />
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="col_full">
+                                            <input type="text" id="subject" name="subject" value=""
+                                                class="required sm-form-control border-form-control" placeholder="Subject" />
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="col_full">
+                                            <textarea class="required sm-form-control border-form-control" id="message"
+                                                name="message" rows="7" cols="30"
+                                                placeholder="Your message"></textarea>
+                                        </div>
+                                        <div class="col_full">
+                                            <button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" value="submit">
+                                                Submit
+                                            </button>
+                                            <br>
+                                            <small style="display: block; font-size: 13px; margin-top: 15px;">
+                                                <i>We will contact you as soon as possible.
+                                                Thank you for your contact.</i>
+                                            </small>
+                                        </div>
+                                    <% } else { %>
+                                        <div class="col_one_third">
+                                            <input type="text" id="name" name="name" value=""
+                                                class="sm-form-control border-form-control required" placeholder="Họ tên" />
+                                        </div>
+                                        <div class="col_one_third">
+                                            <input type="text" id="phone" name="phone" value=""
+                                                class="sm-form-control border-form-control" placeholder="Số điện thoại" />
+                                        </div>
+                                        <div class="col_one_third col_last">
+                                            <input type="email" id="email" name="email" value=""
+                                                class="required email sm-form-control border-form-control" placeholder="Email" />
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="col_full">
+                                            <input type="text" id="subject" name="subject" value=""
+                                                class="required sm-form-control border-form-control" placeholder="Tiêu đề" />
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="col_full">
+                                            <textarea class="required sm-form-control border-form-control" id="message"
+                                                name="message" rows="7" cols="30"
+                                                placeholder="Nội dung tin nhắn"></textarea>
+                                        </div>
+                                        <div class="col_full">
+                                            <button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" value="submit">
+                                                Gửi tin nhắn
+                                            </button>
+                                            <br>
+                                            <small style="display: block; font-size: 13px;">
+                                                <i>Chúng tôi sẽ phản hồi cho bạn trong thời gian sớm nhất.
+                                                Cám ơn bạn đã liên hệ.</i>
+                                            </small>
+                                        </div>
+                                    <% } %>
+
+                                    <div class="clear"></div>
+                                    <div class="col_full hidden">
+                                        <input type="text" id="botcheck" name="botcheck"
+                                            value="" class="sm-form-control" />
+                                    </div>
+                                    <input type="hidden" name="prefix" value="classon-prefix">
+                                    <input type="hidden" name="lang" value="<%= lang %>">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyrights" style="background-color: #ADD7F6;">
+        <div class="container clearfix">
+            Copyright ClassOn 2020. All Rights Reserved.
+        </div>
+    </div>
+</footer>
